@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
 
   s.name            = 'logstash-output-riemann'
-  s.version         = '0.1.4'
+  s.version         = '0.2.0'
   s.licenses        = ['Apache License (2.0)']
   s.summary         = "Riemann is a network event stream processing system."
   s.description     = "This gem is a logstash plugin required to be installed on top of the Logstash core pipeline using $LS_HOME/bin/plugin install gemname. This gem is not a stand-alone program"
@@ -25,5 +25,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'riemann-client', ['0.2.1']
 
   s.add_development_dependency 'logstash-devutils'
+  s.add_development_dependency "logstash-codec-plain"
 end
 
